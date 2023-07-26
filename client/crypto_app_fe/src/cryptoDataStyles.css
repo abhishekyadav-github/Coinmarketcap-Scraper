@@ -1,0 +1,46 @@
+.crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for table headers */
+  .crypto-table th {
+    background-color: #312d2d;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style for table rows */
+  .crypto-table td {
+    font-size: 16px;
+    background-color: #f7f7f7;
+    padding: 8px;
+  }
+  
+  /* Style for odd table rows */
+  .crypto-table tr:nth-child(odd) td {
+    background-color: #e8e8e8;
+  }
+  
+  /* Style for pagination buttons */
+  .crypto-pagination-btn {
+    margin-right: 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .crypto-pagination-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Style for active pagination button */
+  .crypto-pagination-btn.active {
+    background-color: #0056b3;
+  }

@@ -1,24 +1,47 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Ignore node_modules and other dependencies in client/crypto_app_fe folder
+client/crypto_app_fe/node_modules/
+
+# Ignore build artifacts in client/crypto_app_fe folder
+client/crypto_app_fe/build/
+
+# Ignore development server files
+client/crypto_app_fe/.DS_Store
+
+# Ignore environment files in client/crypto_app_fe folder
+client/crypto_app_fe/.env.local
+client/crypto_app_fe/.env.development.local
+client/crypto_app_fe/.env.test.local
+client/crypto_app_fe/.env.production.local
+
+# Ignore npm and yarn log files
+client/crypto_app_fe/npm-debug.log*
+client/crypto_app_fe/yarn-debug.log*
+client/crypto_app_fe/yarn-error.log*
+
+# Ignore package-lock.json and yarn.lock in client/crypto_app_fe folder
+client/crypto_app_fe/package-lock.json
+client/crypto_app_fe/yarn.lock
+
+
+# /.pnp
+# .pnp.js
 
 # testing
-/coverage
+# /coverage
 
 # production
-/build
+# /build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# .DS_Store
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
 *scraper.log
