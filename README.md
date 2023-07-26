@@ -3,6 +3,7 @@ Scrape data from coinmarketcap.com and send it to a Django BE using HTTP POST re
 
 ***
 To run the code do the following:
+Prerequisites: in your python virtual environment install requirements.txt using 'pip install -r requirements.txt' and use this env to run your BE.
 
 Step1: From root dir run scraper.py using 'python scraper.py' command in a separate terminal. 
 
