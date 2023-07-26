@@ -9,7 +9,6 @@ from rest_framework.views import APIView
 
 class UpdateCryptoDataView(APIView):
     def post(self, request):
-        start = time.time()
         data = request.data
         print("in view - ", data[1])
         for coin_data in data:
@@ -38,8 +37,7 @@ class UpdateCryptoDataView(APIView):
                     serializer.save()
                 else:
                     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        end = time.time()
-        print("time taken = ", end-start)
+
         return Response("Data saved/updated successfully.", status=status.HTTP_201_CREATED)
 
 

@@ -107,7 +107,6 @@ if __name__ == "__main__":
     while True:
         try:
             data = scrape_coinmarketcap()
-            print(data[1])
             send_data_to_django(data)
         except Exception as e:
             logging.error(f"Error occurred during scraping and sending data: {str(e)}")
